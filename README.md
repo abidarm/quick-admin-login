@@ -23,6 +23,8 @@ Quick Admin Login simplifies the login process during development by listing up 
 
 ## Installation
 
+### Standard plugin
+
 1. Download or clone this repository
 2. Upload the `quick-admin-login` folder to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
@@ -35,6 +37,15 @@ git clone https://github.com/abidarm/quick-admin-login.git
 ```
 
 Then activate it from the WordPress admin panel.
+
+### Must-use plugin (single file)
+
+This plugin is a single-file plugin, so you can also install it as a **must-use (MU) plugin** without activation:
+
+1. Copy only `quick-admin-login.php` to `/wp-content/mu-plugins/`
+2. If the `mu-plugins` folder does not exist, create it first
+
+MU plugins load automatically on every request, which is handy for local development setups where you always want quick login available.
 
 ## Usage
 
@@ -84,6 +95,8 @@ The plugin includes automatic environment detection to prevent accidental use in
 
 ## Screenshots
 
+![Quick Admin Login on the WordPress login page](screenshot.png)
+
 The plugin displays a clean, centered box on the login page with:
 - Header with icon and "Dev Only" badge
 - List of admin users with avatars
@@ -128,6 +141,7 @@ add_action('login_enqueue_scripts', function() {
 ```
 quick-admin-login/
 ├── quick-admin-login.php  # Main plugin file
+├── screenshot.png         # Plugin screenshot
 └── README.md              # This file
 ```
 
