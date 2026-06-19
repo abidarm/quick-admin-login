@@ -2,6 +2,8 @@
 
 A WordPress plugin that displays admin users on the login page for quick, passwordless login. **Designed exclusively for local development and testing environments.**
 
+![Quick Admin Login on the WordPress login page](screenshot.png)
+
 ## Description
 
 Quick Admin Login simplifies the login process during development by listing up to 3 administrator users directly on the WordPress login page. Simply click on a user to automatically log in without entering a password.
@@ -93,15 +95,6 @@ add_filter('quick_admin_login_is_local', function($is_local) {
 
 The plugin includes automatic environment detection to prevent accidental use in production, but you should always verify your environment settings.
 
-## Screenshots
-
-![Quick Admin Login on the WordPress login page](screenshot.png)
-
-The plugin displays a clean, centered box on the login page with:
-- Header with icon and "Dev Only" badge
-- List of admin users with avatars
-- Hover effects and smooth animations
-- Responsive design for mobile devices
 
 ## Customization
 
